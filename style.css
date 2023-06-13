@@ -5,8 +5,6 @@
 
 .custombackground{
   background-color:#251740;
-  height: 100vh;
-  width:100%
 }
 
 p {
@@ -22,4 +20,10 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     text-decoration: underline;
     padding: 15px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 10px;
 }
