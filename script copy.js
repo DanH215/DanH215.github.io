@@ -5,23 +5,23 @@ const ArtList = [
     },
     {
         name: "24 hills, 60cm x 80cm, acrylic on canvas",
-        image: "assets/A7_08786_web_adjusted - rotate anticlockwise.jpg",
+        image: "assets/A7_08786.png",
     },
     {
         name: "8 windows with stripes, 60cm x 90cm, acrylic on canvas",
-        image: "assets/A7_08807_web_adjusted - rotated anticlockwise.jpg"
+        image: "assets/A7_08807.png"
     },
     {
         name: "8 windos with apples and snails, 60cm x 80cm, acrylic on canvas",
-        image: "assets/A7_08788 - rotate clockwise.JPG",
+        image: "assets/A7_08788.png",
     },
     {
         name: "untitled, SIZE, acrylic on paper",
-        image: "assets/A7_08830_web_adjusted - rotate clockwise.jpg",
+        image: "assets/A7_08830.png",
     },
     {
         name: "we belong together, 50cm x 65cm, acrylic on paper",
-        image: "assets/A7_08838_web_adjusted - rotate clockwise.jpg",
+        image: "assets/A7_08838.png",
     },
     {
         name: "magenta drive #2, 50cm x 65cm, acrylic on paper",
@@ -29,7 +29,7 @@ const ArtList = [
     },
     {
         name: "magenta drive #1, SIZE, acrylic on paper",
-        image: "assets/A7_08914_web_adjusted rotate clockwise.jpg",
+        image: "assets/A7_08914.png",
     },
     {
         name: "magenta drive #3, 50cm x 65cm, acrylic on paper",
@@ -57,15 +57,15 @@ const ArtList = [
     },
     {
         name: "exercise in form and colour #1, SIZE, acrylic on paper",
-        image: "assets/A7_08902_web_adjusted - rotate clockwise.jpg",
+        image: "assets/A7_08902.png",
     },
     {
         name: "8 windows, SIZE, acrylic on paper",
-        image: "assets/A7_08907_web_adjusted - rotate antioclockwise.jpg",
+        image: "assets/A7_08907.png",
     },
     {
         name: "the plank, SIZE, acrylic on paper",
-        image: "assets/A7_08912_1_web_adjusted_2 - rotate anticlockwise.jpg",
+        image: "assets/A7_08912.png",
     },
     {
         name: "welcome to the world famous nothing 2 declare, 2023, 60cm x 80cm, acrylic on canvas",
@@ -176,7 +176,7 @@ const ArtList = [
     },
     {
         name: "death and the maiden, 50cm x 65cm, acrylic on paper",
-        image: "assets/A7_08864_web_adjusted.jpg"
+        image: "assets/A7_08864.png"
     },
     {
         name: "the land of unlikeliness, SIZE, acrylic on paper",
@@ -184,7 +184,7 @@ const ArtList = [
     },
     {
         name: "i wouldn't go that far, SIZE, acrylic on paper",
-        image: "assets/A7_08893_web_adjusted - rotate anticlockwise.jpg"
+        image: "assets/A7_08893.png"
     },
     {
         name: "untitled, 50cm x 65cm, acrylic on paper",
@@ -504,6 +504,8 @@ function AddImage(Array, CardIndex, ArrayIndex, columnNumber)
     CardId = ColumnId + " Card " + CardIndex
     Card.id = CardId
     column.append(Card)
+    const Break = document.createElement('br')
+    column.append(Break)
 
     const CardText = document.createElement("p");
     CardText.classList.add("card-text")
