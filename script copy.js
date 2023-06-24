@@ -108,7 +108,7 @@ const ArtList = [
         image: "assets/A7_08824_web_adjusted.jpg"
     },
     {
-        name: "on bukowskis' bluebird, 100cm x 100cm, acrylic on canvas",
+        name: "on bukowski's bluebird, 100cm x 100cm, acrylic on canvas",
         image: "assets/A7_08826_web_adjusted.jpg"
     },
     {
