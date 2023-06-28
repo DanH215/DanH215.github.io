@@ -5,6 +5,8 @@
 
 .custombackground{
   background-color:#251740;
+  height: 5000px;
+  width: auto;
 }
 
 p {
@@ -25,8 +27,37 @@ h1, h2, h3, h4, h5, h6 {
 .gallery{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-gap: 10px;
-    width: auto;
-    margin-left: 10px;
-    margin-right: 20px;
+    grid-gap: 500px;
+    width: 1000px;
+    margin-left: 200px;
+    margin-right: 500px;
 }
+
+.card{
+    max-height: 1000px;
+}
+.container{
+    width: 3000px;
+    height: 3000px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.DetailImg{
+    height: 900px;
+}
+
+/* img{
+    max-height: 500px;
+} */
+/* .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0,0,0,.2);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    color: white;
+} */
