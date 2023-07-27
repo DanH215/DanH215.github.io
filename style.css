@@ -1,13 +1,17 @@
+body{
+    background-color:#251740;
+}
+
 .custom-height{
-    height: 100vh;
+    height: 100%;
 }
 
 
-.custombackground{
+/* .custombackground{
   background-color:#251740;
-  height: 5000px;
+  height: auto;
   width: auto;
-}
+} */
 
 p {
     padding: 5px;
@@ -31,10 +35,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 1000px;
     margin-left: 200px;
     margin-right: 500px;
+    background-color:#251740;
 }
 
+
 .card{
-    max-height: 1000px;
+    max-height: 50%;
+    background-color:#251740;
+    color: white;
+    /* background-color:#251740 !important; */
 }
 .container{
     width: 3000px;
@@ -61,3 +70,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.25rem;
     color: white;
 } */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    
+}

@@ -1,3 +1,12 @@
+// ExceptionList will be triplets:
+// magenta drive #1, SIZE, acrylic on paper
+// magenta drive #2, 50cm x 65cm, acrylic on paper
+// magenta drive #3, 50cm x 65cm, acrylic on paper
+
+// from all she surveys, 50cm x 65cm, acrylic on paper
+// exercise in form and colour #2, 50cm x 65cm, acrylic on paper
+// memento mori, SIZE, acrylic on paper
+
 const ArtList = [
     {
         name: "8 windows to the end, 60cm x 80cm, acrylic on canvas",
@@ -254,6 +263,7 @@ function AddImage(Array, CardIndex, ArrayIndex, columnNumber)
     const column = document.getElementById(ColumnId)
     const Card = document.createElement("div")
     Card.classList.add("card")
+    Card.style.backgroundColor = "#251740"
     CardId = ColumnId + " Card " + CardIndex
     Card.id = CardId
     column.append(Card)
@@ -264,10 +274,10 @@ function AddImage(Array, CardIndex, ArrayIndex, columnNumber)
 
     const ImageToAdd = document.createElement("img");
     ImageToAdd.setAttribute("src", Array[ArrayIndex].image);
-    ImageToAdd.classList.add("card-img-bottom");
+    ImageToAdd.classList.add("card-img-top");
 
     const CardText = document.createElement("p");
-    CardText.classList.add("card-text")
+    // CardText.classList.add("card-text")
     CardText.innerText = Array[ArrayIndex].name
     
 
