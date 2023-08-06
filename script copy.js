@@ -280,6 +280,10 @@ function AddImage(Array, CardIndex, ArrayIndex, columnNumber)
     // CardText.classList.add("card-text")
     CardText.innerText = Array[ArrayIndex].name
     
+    Element.addEventListener('click', TripletLink);
+    function TripletLink(){
+        
+    }
 
     ImageToAdd.addEventListener('click', function() {
         const imageUrl = ImageToAdd.src;
