@@ -9,18 +9,6 @@
 
 const ArtList = [
     {
-        name: "3 views of a horse's head, 42cm x 29cm, pencil on paper",
-        image: "assets/untitled1.jpeg"
-    },
-    {
-        name: "3 views of a horse's head, 42cm x 29cm, pencil on paper",
-        image: "assets/untitled1r1.jpeg"
-    },
-    {
-        name: "3 views of a horse's head, 42cm x 29cm, pencil on paper",
-        image: "assets/untitled1r2.jpeg"
-    },
-    {
         name: "8 windows to the end, 60cm x 80cm, acrylic on canvas",
         image: "assets/A7_08784_web_adjusted.jpg",
     },
@@ -37,7 +25,7 @@ const ArtList = [
         image: "assets/A7_08788.png",
     },
     {
-        name: "untitled, SIZE, acrylic on canvas paper",
+        name: "pastelle, 60cm x 50cm, acrylic on canvas paper",
         image: "assets/A7_08830.png",
     },
     {
@@ -93,7 +81,7 @@ const ArtList = [
         image: "assets/A7_08805_web_adjusted.jpg"
     },
     {
-        name: "wood from the trees, SIZE, acrylic on canvas",
+        name: "wood from the trees, 75cm x 100cm, acrylic on canvas",
         image: "assets/A7_08811_web_adjusted.jpg"
     },
     {
@@ -121,7 +109,7 @@ const ArtList = [
         image: "assets/A7_08833_web_adjusted.jpg"
     },
     {
-        name: "when we were, SIZE, acrylic on canvas paper",
+        name: "when we were, 83cm x 60cm, acrylic on canvas paper",
         image: "assets/A7_08835_web_adjusted.jpg"},
     {
         name: "some windows, 50cm x 65cm, acrylic on canvas paper",
@@ -160,7 +148,7 @@ const ArtList = [
         image: "assets/A7_08854_web_adjusted.jpg"
     },
     {
-        name: "jus slide, SIZE, acrylic on canvas paper",
+        name: "jus slide, 70cm x 50cm, acrylic on canvas paper",
         image: "assets/A7_08856_web_adjusted.jpg"
     },
     {
@@ -180,11 +168,11 @@ const ArtList = [
         image: "assets/A7_08864.png"
     },
     {
-        name: "the land of unlikeliness, SIZE, acrylic on canvas paper",
+        name: "the land of unlikeliness, 70cm x 50cm, acrylic on canvas paper",
         image: "assets/A7_08866_web_adjusted.jpg"
     },
     {
-        name: "i wouldn't go that far, SIZE, acrylic on canvas paper",
+        name: "i wouldn't go that far, 59cm x 42cm, acrylic on canvas paper",
         image: "assets/A7_08893.png"
     },
     {
@@ -192,7 +180,7 @@ const ArtList = [
         image: "assets/A7_08897_web_adjusted.jpg"
     },
     {
-        name: "8 windows, SIZE, acrylic on canvas paper",
+        name: "8 windows, 70cm x 50cm, acrylic on canvas paper",
         image: "assets/A7_08899_web_adjusted.jpg"
     },
     {
@@ -216,7 +204,7 @@ const ArtList = [
         image: "assets/Behind the green door.jpeg"
     },
     {
-        name: "on radioheads' weird fishes, SIZE, acrylic on canvas",
+        name: "on radioheads' weird fishes, 80dm x 60cm, acrylic on canvas",
         image: "assets/WhatsApp Image 2023-08-01 at 14.12.47.jpeg"
     },
     {
@@ -232,7 +220,7 @@ const ArtList = [
         image: "assets/WhatsApp Image 2023-05-19 at 18.38.27.jpeg"
     },
     {
-        name: "the dog's small black old rubber ball, SIZE, acrylic on canvas",
+        name: "the dog's small black old rubber ball, 80cm x 60cm, acrylic on canvas",
         image: "assets/WhatsApp Image 2023-05-19 at 18.41.16.jpeg"
     },
     {
@@ -265,6 +253,18 @@ const TripletList =
     {
         name: "exercise in form and colour #2, 50cm x 65cm, acrylic on canvas paper",
         image: "assets/A7_08895_web_adjusted.jpg"
+    },
+    {
+        name: "3 views of a horse's head, 42cm x 30cm, pencil on paper",
+        image: "assets/untitled1.jpeg"
+    },
+    {
+        name: "3 views of a horse's head, 42cm x 30cm, pencil on paper",
+        image: "assets/untitled1r1.jpeg"
+    },
+    {
+        name: "3 views of a horse's head, 42cm x 30cm, pencil on paper",
+        image: "assets/untitled1r2.jpeg"
     }
 ]
 
@@ -314,7 +314,7 @@ function AddImage(Array, CardIndex, ArrayIndex, columnNumber)
     Container.appendChild(ImageToAdd)
 }
 
-    for(let TripletIndex = 0; TripletIndex <= 5; TripletIndex++)
+    for(let TripletIndex = 0; TripletIndex <= 8; TripletIndex++)
     {
         const ColumnId = "Column"+(TripletIndex+3)
         console.log(ColumnId)
@@ -332,7 +332,7 @@ function AddImage(Array, CardIndex, ArrayIndex, columnNumber)
         const ImageToAdd = document.createElement("img");
         ImageToAdd.setAttribute("src", TripletList[TripletIndex].image);
         console.log(TripletList[TripletIndex])
-        ImageToAdd.style.maxHeight = "300px"
+        ImageToAdd.style.maxHeight = "400px"
         ImageToAdd.style.maxWidth = "100%"
         ImageToAdd.style.display = "block"
         ImageToAdd.style.marginLeft = "auto"
