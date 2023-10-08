@@ -9,6 +9,18 @@
 
 const ArtList = [
     {
+        name: "3 views of a horse's head, 42cm x 29cm, pencil on paper",
+        image: "assets/untitled1.jpeg"
+    },
+    {
+        name: "3 views of a horse's head, 42cm x 29cm, pencil on paper",
+        image: "assets/untitled1r1.jpeg"
+    },
+    {
+        name: "3 views of a horse's head, 42cm x 29cm, pencil on paper",
+        image: "assets/untitled1r2.jpeg"
+    },
+    {
         name: "8 windows to the end, 60cm x 80cm, acrylic on canvas",
         image: "assets/A7_08784_web_adjusted.jpg",
     },
@@ -32,30 +44,6 @@ const ArtList = [
         name: "we belong together, 50cm x 65cm, acrylic on canvas paper",
         image: "assets/A7_08838.png",
     },
-    // {
-    //     name: "magenta drive #2, 50cm x 65cm, acrylic on paper",
-    //     image: "assets/A7_08916_web_adjusted.jpg"
-    // },
-    // {
-    //     name: "magenta drive #1, SIZE, acrylic on paper",
-    //     image: "assets/A7_08914.png",
-    // },
-    // {
-    //     name: "magenta drive #3, 50cm x 65cm, acrylic on paper",
-    //     image: "assets/A7_08918_web_adjusted.jpg"
-    // },
-    // {
-    //     name: "exercise in form and colour #2, 50cm x 65cm, acrylic on paper",
-    //     image: "assets/A7_08895_web_adjusted.jpg"
-    // },
-    // {
-    //     name: "memento mori, SIZE, acrylic on paper",
-    //     image: "assets/WhatsApp1.jpeg",
-    // },
-    // {
-    //     name: "from all she surveys, 50cm x 65cm, acrylic on paper",
-    //     image: "assets/A7_08890_web_adjusted.jpg"
-    // },
     {
         name: "sundown with the petal collectors, 85cm x 60cm, acrylic on canvas paper",
         image: "assets/A7_08869_web_uncorrected.jpg",
@@ -69,12 +57,16 @@ const ArtList = [
         image: "assets/A7_08902.png",
     },
     {
-        name: "8 windows, SIZE, acrylic on canvas paper",
+        name: "8 windows, 42cm x 29cm, acrylic on canvas paper",
         image: "assets/A7_08907.png",
     },
     {
-        name: "the plank, SIZE, acrylic on canvas paper",
-        image: "assets/A7_08912.png",
+        name: "the plank, 30cm x 21cm, acrylic on canvas paper",
+        image: "assets/A7_08912.png", 
+    },
+    {
+        name: "open corridor, 30cm x 21cm, acrylic on canvas paper",
+        image: "assets/ThePlank2.jpg", 
     },
     {
         name: "welcome to the world famous nothing 2 declare, 2023, 60cm x 80cm, acrylic on canvas",
@@ -204,7 +196,7 @@ const ArtList = [
         image: "assets/A7_08899_web_adjusted.jpg"
     },
     {
-        name: "the dance, SIZE, acrylic on canvas paper",
+        name: "the dance, 45cm x 32cm, acrylic on canvas paper",
         image: "assets/A7_08904_web_adjusted.jpg"
     },
     {
@@ -228,19 +220,15 @@ const ArtList = [
         image: "assets/WhatsApp Image 2023-08-01 at 14.12.47.jpeg"
     },
     {
-        name: "untitled, SIZE, acrylic on paper",
-        image: "assets/WhatsApp1.jpeg"
-    },
-    {
         name: "untitled, SIZE, acrylic on canvas",
         image: "assets/WhatsApp Image 2023-05-19 at 18-32-51.jpeg"
     },
     {
-        name: "untitled, SIZE, acrylic on paper",
-        image: "assets/WhatsApp Image 2023-05-19 at 18-38-08.jpeg"
+        name: "untitled, 42cm x 29cm, pencil on paper",
+        image: "assets/untitled.jpeg"
     },
     {
-        name: "untitled, SIZE, acrylic on paper",
+        name: "untitled, 42cm x 29cm, pencil on paper",
         image: "assets/WhatsApp Image 2023-05-19 at 18.38.27.jpeg"
     },
     {
@@ -255,15 +243,15 @@ const ArtList = [
 const TripletList = 
 [
     {
-        name: "magenta drive #3, 50cm x 65cm, acrylic on canvas paper",
-        image: "assets/A7_08918_web_adjusted.jpg"
+        name: "magenta drive #3, 42cm x 29cm, acrylic on canvas paper",
+        image: "assets/A7_08918_web_adjusted.png"
     },
     {
-        name: "magenta drive #1, SIZE, acrylic on canvas paper",
+        name: "magenta drive #1, 42cm x 29cm, acrylic on canvas paper",
         image: "assets/A7_08914.png",
     },
     {
-        name: "magenta drive #2, 50cm x 65cm, acrylic on canvas paper",
+        name: "magenta drive #2, 42cm x 29cm, acrylic on canvas paper",
         image: "assets/A7_08916_web_adjusted.jpg"
     },
     {
@@ -271,7 +259,7 @@ const TripletList =
         image: "assets/A7_08890_web_adjusted.jpg"
     },
     {
-        name: "memento mori, SIZE, acrylic on canvas paper",
+        name: "memento mori, 50cm x 65cm, acrylic on canvas paper",
         image: "assets/WhatsApp1.jpeg",
     },
     {
@@ -291,6 +279,7 @@ function AddImage(Array, CardIndex, ArrayIndex, columnNumber)
     const Card = document.createElement("div")
     Card.classList.add("card")
     Card.style.backgroundColor = "#251740"
+    Card.style.maxWidth = "100%"
     CardId = ColumnId + " Card " + CardIndex
     Card.id = CardId
     column.append(Card)
@@ -299,48 +288,71 @@ function AddImage(Array, CardIndex, ArrayIndex, columnNumber)
         column.append(Break)
     }
 
+    const Container = document.createElement("container");
     const ImageToAdd = document.createElement("img");
     ImageToAdd.setAttribute("src", Array[ArrayIndex].image);
-    ImageToAdd.classList.add("card-img-top");
+    ImageToAdd.style.maxWidth = "100%"
+    ImageToAdd.style.height = "auto"
+    ImageToAdd.style.display = "block"
+    ImageToAdd.style.marginLeft = "auto"
+    ImageToAdd.style.marginRight = "auto"
+    ImageToAdd.classList.add("img-fluid")
 
     const CardText = document.createElement("p");
-    // CardText.classList.add("card-text")
     CardText.innerText = Array[ArrayIndex].name
     
-    // Element.addEventListener('click', TripletLink);
-    // function TripletLink(){
-        
-    // }
 
     ImageToAdd.addEventListener('click', function() {
         const imageUrl = ImageToAdd.src;
         window.location.href = 'img1.html?image=' + encodeURIComponent(imageUrl) + '&content=' + encodeURIComponent(Array[ArrayIndex].name);
       });
 
-    // const CardToAppendTo = document.getElementsByClassName('card');
     const CardToAppendTo = document.getElementById(CardId);
-    // console.log(CardId)
-    // console.log(CardToAppendTo)
     
     CardToAppendTo.appendChild(CardText)
-    CardToAppendTo.appendChild(ImageToAdd)
+    CardToAppendTo.appendChild(Container)
+    Container.appendChild(ImageToAdd)
 }
-
-// const TripletColumns = ["Column3", "Column4", "Column5"]
-// TripletColumns.forEach(TripletColumn => {
-    // console.log(TripletColumn)
-    // const TripletImage = document.getElementById(TripletColumn)
-    // TripletImage.getElementsByClassName("card")
-    // console.log(TripletImage)
 
     for(let TripletIndex = 0; TripletIndex <= 5; TripletIndex++)
     {
-        const TripletImage = document.getElementById("Triplet"+TripletIndex)
-        console.log(TripletImage.id)
-        TripletImage.addEventListener('click', function() {
+        const ColumnId = "Column"+(TripletIndex+3)
+        console.log(ColumnId)
+        const column = document.getElementById(ColumnId)
+        const Card = document.createElement("div")
+        const div = document.createElement("div")
+        Card.classList.add("card")
+        Card.style.backgroundColor = "#251740"
+        Card.style.maxWidth = "100%"
+        // Card.style.overflow = "hidden"
+        const CardId = "TripletCard" + TripletIndex
+        Card.id = CardId
+        column.append(Card)
+    
+        const ImageToAdd = document.createElement("img");
+        ImageToAdd.setAttribute("src", TripletList[TripletIndex].image);
+        console.log(TripletList[TripletIndex])
+        ImageToAdd.style.maxHeight = "300px"
+        ImageToAdd.style.maxWidth = "100%"
+        ImageToAdd.style.display = "block"
+        ImageToAdd.style.marginLeft = "auto"
+        ImageToAdd.style.marginRight = "auto"
+        ImageToAdd.classList.add("img-fluid")
+    
+        const CardText = document.createElement("p");
+        CardText.innerText = TripletList[TripletIndex].name
+
+
+        ImageToAdd.addEventListener('click', function() {
             const imageUrl = TripletList[TripletIndex].image;
             window.location.href = 'img1.html?image=' + encodeURIComponent(imageUrl) + '&content=' + encodeURIComponent(TripletList[TripletIndex].name);
           });
+        
+        const Container = document.createElement("container");
+        const CardToAppendTo = document.getElementById(CardId);
+        CardToAppendTo.appendChild(CardText)
+        CardToAppendTo.appendChild(div)
+        div.appendChild(ImageToAdd)
     }
 // });
 
