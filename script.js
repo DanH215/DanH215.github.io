@@ -41,16 +41,16 @@ const ArtList = [
         image: "assets/A7_08873_web_adjusted.jpg"
     },
     {
-        name: "exercise in form and colour #1, SIZE, acrylic on canvas paper",
+        name: "exercise in form and colour #1, 45cm x 32cm, acrylic on canvas paper",
         image: "assets/A7_08902.png",
-    },
-    {
-        name: "8 windows, 42cm x 29cm, acrylic on canvas paper",
-        image: "assets/A7_08907.png",
     },
     {
         name: "the plank, 30cm x 21cm, acrylic on canvas paper",
         image: "assets/A7_08912.png", 
+    },
+    {
+        name: "8 windows, 42cm x 29cm, acrylic on canvas paper",
+        image: "assets/A7_08907.png",
     },
     {
         name: "open corridor, 30cm x 21cm, acrylic on canvas paper",
@@ -132,12 +132,12 @@ const ArtList = [
         image: "assets/A7_08846_web_adjusted.jpg"
     },
     {
-        name: "esse est percipi - there will be blood, 50cm x 65cm, acrylic on canvas paper",
-        image: "assets/A7_08848_web_adjusted.jpg"
-    },
-    {
         name: "unrequited love, 50cm x 65cm, acrylic on canvas paper",
         image: "assets/A7_08850_web_adjusted.jpg"
+    },
+    {
+        name: "esse est percipi - there will be blood, 50cm x 65cm, acrylic on canvas paper",
+        image: "assets/A7_08848_web_adjusted.jpg"
     },
     {
         name: '"to the stairway!", 50cm x 65cm, acrylic on canvas paper',
@@ -160,7 +160,7 @@ const ArtList = [
         image: "assets/A7_08860_web_adjusted.jpg"
     },
     {
-        name: "hmmmm, 50cm x 65cm, acrylic on canvas paper",
+        name: "hmmmm yumyum, 50cm x 65cm, acrylic on canvas paper",
         image: "assets/A7_08862_web_adjusted.jpg"
     },
     {
@@ -188,11 +188,11 @@ const ArtList = [
         image: "assets/A7_08904_web_adjusted.jpg"
     },
     {
-        name: "8 windows, 60cm x 80cm, acrylic on canvas",
+        name: "8 windows with views #1, 60cm x 80cm, acrylic on canvas",
         image: "assets/8 windows.jpeg"
     },
     {
-        name: "the star of the show is always an anvil., SIZE, acrylic on canvas",
+        name: "the star of the show is always an anvil., 60cm x 80cm, acrylic on canvas",
         image: "assets/the star of the show is always an anvil.jpeg"
     },
     {
@@ -200,7 +200,7 @@ const ArtList = [
         image: "assets/30 hills.jpeg"
     },
     {
-        name: "behind the green door., SIZE, acrylic on canvas",
+        name: "behind the green door., acrylic on canvas",
         image: "assets/Behind the green door.jpeg"
     },
     {
@@ -208,7 +208,7 @@ const ArtList = [
         image: "assets/WhatsApp Image 2023-08-01 at 14.12.47.jpeg"
     },
     {
-        name: "untitled, SIZE, acrylic on canvas",
+        name: "8 windows with views #2, 42cm x 30cm, acrylic on canvas",
         image: "assets/WhatsApp Image 2023-05-19 at 18-32-51.jpeg"
     },
     {
@@ -224,7 +224,7 @@ const ArtList = [
         image: "assets/WhatsApp Image 2023-05-19 at 18.41.16.jpeg"
     },
     {
-        name: "the descent of icarus, SIZE, acrylic on canvas paper",
+        name: "the descent of icarus, 70cm x 50cm, acrylic on canvas paper",
         image: "assets/A7_08909_web_adjusted.jpg"
     }
 ]
